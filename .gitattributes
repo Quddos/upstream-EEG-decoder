@@ -1,12 +1,17 @@
-# Every text file is stored and checked out with LF endings, on every platform.
+# Line endings are NOT converted, in either direction.
 #
-# This is not a style preference: MANIFEST.sha256 records the SHA-256 of each
-# file as committed. If git converted line endings on checkout, every digest
-# would fail to verify on Windows and the provenance record would be useless.
-* text=auto eol=lf
-
-# Binary-ish artifacts that must never be touched.
-*.npz  binary
-*.edf  binary
-*.pdf  binary
-*.png  binary
+# This is not a style choice. MANIFEST.sha256 records the SHA-256 of every file
+# as deposited, and the guarantee it makes is that a clone is bit-for-bit what
+# was published. Any end-of-line conversion on commit or checkout would break
+# that guarantee on some platform.
+#
+# The parent repository runs with core.autocrlf=true and no .gitattributes, so
+# its Windows working tree holds a mix: 30 of these text files are CRLF on disk
+# and 71 are LF. The copies here preserve each file exactly as it was, which is
+# what makes the byte-identity claim in PROVENANCE.md section 1.2 true. The
+# mixed endings are therefore a property of the source, faithfully carried over,
+# not an oversight.
+#
+# `-text` disables all conversion. Verify after cloning with:
+#     sha256sum -c MANIFEST.sha256
+* -text

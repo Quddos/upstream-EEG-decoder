@@ -58,6 +58,21 @@ removes a local filesystem layout from a public deposit. It is recorded here and
 in `MANIFEST.json` rather than glossed over, because the byte-identity claim in
 §1.1–§1.4 would otherwise be inaccurate for these two files.
 
+**Line endings are not converted, and this matters.** `MANIFEST.sha256`
+guarantees that a clone is bit-for-bit what was deposited, so any end-of-line
+conversion on commit or checkout would break it on some platform. The parent
+repository runs with `core.autocrlf=true` and no `.gitattributes`, so its Windows
+working tree holds a mix: **30 of these text files are CRLF on disk and 71 are
+LF**. `.gitattributes` here sets `* -text`, which disables conversion in both
+directions, so each file is preserved exactly as it was. The mixed endings are a
+property of the source faithfully carried over, not an oversight.
+
+This was found by testing rather than assumed. An earlier `.gitattributes` using
+`* text=auto eol=lf` normalised the 30 CRLF files on commit, and **39 of the 105
+digests then failed to verify from a fresh clone** — under both a default clone
+and one with `core.autocrlf=true`. The `-text` policy was adopted in response,
+and both clone modes now verify 105 of 105.
+
 ### 1.3 The pipeline self-verifies against the published results
 
 `src/encoder/paper1.py::_verify_reproduction` compares the per-subject balanced
@@ -189,6 +204,10 @@ python scripts/reproduce_predictions.py       # workflow B3, needs data/processe
 python -m pytest -q                           # offline test suite
 sha256sum -c MANIFEST.sha256                  # every file against its recorded digest
 ```
+
+The digest check is expected to report **105 of 105 OK** immediately after a
+clone, on Windows as well as on Linux or macOS. If it does not, the checkout has
+altered the files and nothing else in this record should be trusted.
 
 Measured on this repository: **417 tests passed, 1 skipped, 25 deselected.** The
 single skip is the live-data suite, which reports `PHYSIONET DATA UNAVAILABLE`

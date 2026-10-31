@@ -6,12 +6,12 @@
  "n_derived": 2,
  "n_authored": 8,
  "n_origin_untracked_in_parent_git": 35,
- "total_bytes": 2689075,
+ "total_bytes": 2690697,
  "files": [
   {
    "path": ".gitattributes",
-   "bytes": 442,
-   "sha256": "886241e263724a9edf1e4239221bd4236a90b898d55c82e1ac7be43e30fe58b7",
+   "bytes": 854,
+   "sha256": "11fde94671453269001cd8342722469c28ed28e34b21be3320002181f9260216",
    "origin": "authored"
   },
   {
@@ -150,8 +150,8 @@
   },
   {
    "path": "PROVENANCE.md",
-   "bytes": 10829,
-   "sha256": "22056e8fc7d8c8d7b582cc5ef5d45e1c0f3e4b5c8e7115521eb210c97dcdb4fe",
+   "bytes": 12039,
+   "sha256": "197ce4e76db53d2f398b2ee3bbb35fd2b4dc007e6340f72cb39ef2d1f7563639",
    "origin": "authored"
   },
   {
