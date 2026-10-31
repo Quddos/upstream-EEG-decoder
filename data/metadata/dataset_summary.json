@@ -1,0 +1,480 @@
+{
+  "dataset": "PhysioNet EEG Motor Movement/Imagery Database (EEGMMIDB) v1.0.0",
+  "dataset_url": "https://physionet.org/content/eegmmidb/1.0.0/",
+  "source": "physionet",
+  "synthetic": false,
+  "generated_utc": "2026-08-18T09:12:04+00:00",
+  "config_fingerprint": "dd9472584bf9189e",
+  "git_commit": "ac39cc31b969f73624e9ef19cd1834a935db1f35",
+  "library_versions": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "mne": "1.12.1"
+  },
+  "config": {
+    "subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "runs": [
+      4,
+      8,
+      12
+    ],
+    "include_rest": true,
+    "max_rest_epochs_per_run": 8,
+    "source": "physionet",
+    "strict": true,
+    "preprocessing": {
+      "l_freq": 8.0,
+      "h_freq": 30.0,
+      "filter_method": "fir",
+      "fir_design": "firwin",
+      "filter_phase": "zero",
+      "filter_length": "auto",
+      "notch_enabled": false,
+      "notch_freqs": [
+        60.0
+      ],
+      "common_average_reference": true,
+      "epoch_tmin": 0.0,
+      "epoch_tmax": 4.0,
+      "include_tmax": false,
+      "baseline": null,
+      "reject_peak_to_peak_v": null,
+      "reject_log_threshold_v": 0.00015,
+      "normalization": "zscore_per_channel",
+      "channel_subset": null,
+      "montage": "standard_1005"
+    },
+    "paths": {
+      "root": ".",
+      "raw": "data\\raw",
+      "processed": "data\\processed",
+      "metadata": "data\\metadata",
+      "figures": "reports\\figures"
+    },
+    "seed": 20260815
+  },
+  "classes": [
+    "REST",
+    "LEFT_HAND_IMAGERY",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "class_to_index": {
+    "REST": 0,
+    "LEFT_HAND_IMAGERY": 1,
+    "RIGHT_HAND_IMAGERY": 2
+  },
+  "n_subjects": 40,
+  "n_runs": 120,
+  "n_epochs": 2760,
+  "n_channels": 64,
+  "channels": [
+    "FC5",
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "FC6",
+    "C5",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP5",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4",
+    "CP6",
+    "Fp1",
+    "Fpz",
+    "Fp2",
+    "AF7",
+    "AF3",
+    "AFz",
+    "AF4",
+    "AF8",
+    "F7",
+    "F5",
+    "F3",
+    "F1",
+    "Fz",
+    "F2",
+    "F4",
+    "F6",
+    "F8",
+    "FT7",
+    "FT8",
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "TP7",
+    "TP8",
+    "P7",
+    "P5",
+    "P3",
+    "P1",
+    "Pz",
+    "P2",
+    "P4",
+    "P6",
+    "P8",
+    "PO7",
+    "PO3",
+    "POz",
+    "PO4",
+    "PO8",
+    "O1",
+    "Oz",
+    "O2",
+    "Iz"
+  ],
+  "sampling_rate": 160.0,
+  "epoch_samples": 640,
+  "epoch_seconds": 4.0,
+  "class_counts": {
+    "LEFT_HAND_IMAGERY": 905,
+    "REST": 960,
+    "RIGHT_HAND_IMAGERY": 895
+  },
+  "epochs_per_subject": {
+    "S001": 69,
+    "S002": 69,
+    "S003": 69,
+    "S004": 69,
+    "S005": 69,
+    "S006": 69,
+    "S007": 69,
+    "S008": 69,
+    "S009": 69,
+    "S010": 69,
+    "S011": 69,
+    "S012": 69,
+    "S013": 69,
+    "S014": 69,
+    "S015": 69,
+    "S016": 69,
+    "S017": 69,
+    "S018": 69,
+    "S019": 69,
+    "S020": 69,
+    "S021": 69,
+    "S022": 69,
+    "S023": 69,
+    "S024": 69,
+    "S025": 69,
+    "S026": 69,
+    "S027": 69,
+    "S028": 69,
+    "S029": 69,
+    "S030": 69,
+    "S031": 69,
+    "S032": 69,
+    "S033": 69,
+    "S034": 69,
+    "S035": 69,
+    "S036": 69,
+    "S037": 69,
+    "S038": 69,
+    "S039": 69,
+    "S040": 69
+  },
+  "class_counts_per_subject": {
+    "S001": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S002": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S003": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S004": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S005": {
+      "LEFT_HAND_IMAGERY": 21,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 24
+    },
+    "S006": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S007": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S008": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S009": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S010": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S011": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S012": {
+      "LEFT_HAND_IMAGERY": 21,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 24
+    },
+    "S013": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S014": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S015": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S016": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S017": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S018": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S019": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S020": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S021": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S022": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S023": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S024": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S025": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S026": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S027": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S028": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S029": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S030": {
+      "LEFT_HAND_IMAGERY": 24,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 21
+    },
+    "S031": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S032": {
+      "LEFT_HAND_IMAGERY": 21,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 24
+    },
+    "S033": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S034": {
+      "LEFT_HAND_IMAGERY": 21,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 24
+    },
+    "S035": {
+      "LEFT_HAND_IMAGERY": 22,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 23
+    },
+    "S036": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S037": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S038": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S039": {
+      "LEFT_HAND_IMAGERY": 23,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 22
+    },
+    "S040": {
+      "LEFT_HAND_IMAGERY": 21,
+      "REST": 24,
+      "RIGHT_HAND_IMAGERY": 24
+    }
+  },
+  "subjects_processed": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010",
+    "S011",
+    "S012",
+    "S013",
+    "S014",
+    "S015",
+    "S016",
+    "S017",
+    "S018",
+    "S019",
+    "S020",
+    "S021",
+    "S022",
+    "S023",
+    "S024",
+    "S025",
+    "S026",
+    "S027",
+    "S028",
+    "S029",
+    "S030",
+    "S031",
+    "S032",
+    "S033",
+    "S034",
+    "S035",
+    "S036",
+    "S037",
+    "S038",
+    "S039",
+    "S040"
+  ],
+  "recordings_processed": 120,
+  "failures": [],
+  "artifact_flagged_epochs": 1356,
+  "notes": [
+    "Epochs are stored in volts, un-normalised; normalisation is applied at load time by load_dataset(normalize=True).",
+    "Splits must be made by subject_id, never by random epoch, to avoid leakage between temporally adjacent windows."
+  ]
+}

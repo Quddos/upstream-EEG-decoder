@@ -1,0 +1,42 @@
+# Upstream EEG decoder -- dependencies.
+#
+#     python -m pip install -r requirements.txt
+#
+# The exact versions the deposited predictions were produced with are recorded
+# in data/metadata/phase6b/phase6b_summary.json (decoder) and
+# data/metadata/dataset_summary.json (dataset build):
+#
+#     python 3.14.6   numpy 2.5.1   pandas 3.0.5   scikit-learn 1.9.0
+#     scipy 1.18.0    mne 1.12.1
+#
+# They are given as lower bounds below, because the pipeline self-verifies
+# against the published per-subject accuracies at a 1e-9 tolerance and aborts if
+# a library change moves a result. A newer release that passes that check is
+# safe; one that fails it will say so loudly rather than silently.
+
+# --- core scientific stack -------------------------------------------------------
+numpy>=1.26
+scipy>=1.11                # Welch PSD
+pandas>=2.1                # epoch metadata index
+
+# --- EEG --------------------------------------------------------------------------
+mne>=1.6                   # EDF+ reading, montages, filtering, epoching
+pooch>=1.8                 # required by mne.datasets.eegbci for the PhysioNet fetch
+edfio>=0.4                 # required by mne.export.export_raw(fmt="edf")
+
+# --- machine learning -------------------------------------------------------------
+# Logistic regression, linear SVM, random forest and the leave-one-subject-out
+# splitter. No deep-learning dependency.
+scikit-learn>=1.4
+
+# Spatial-filter comparison arm (src/features/spatial.py): CSP comes from mne,
+# the Riemannian tangent-space pipeline from pyriemann. Needed by the Phase 4B
+# comparison and by two of the leakage test modules; the band-power decoder that
+# produced the deposited predictions does not use either.
+pyriemann>=0.6
+
+# --- figures ----------------------------------------------------------------------
+matplotlib>=3.8
+
+# --- testing ----------------------------------------------------------------------
+pytest>=7.4

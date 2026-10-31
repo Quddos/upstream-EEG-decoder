@@ -1,0 +1,838 @@
+{
+ "description": "SHA-256 of every file in this repository. origin='verbatim' means the file is a byte-identical copy of the same path in the parent NeuroAdaptive-Mirror-World repository at commit ac39cc31b969f73624e9ef19cd1834a935db1f35, which is the commit recorded in the provenance of the deposited out-of-fold predictions. origin='derived' means a copy whose machine-local absolute paths were made repository-relative; the change is described per file. origin='authored' means written for this repository.",
+ "parent_commit": "ac39cc31b969f73624e9ef19cd1834a935db1f35",
+ "n_files": 105,
+ "n_verbatim": 95,
+ "n_derived": 2,
+ "n_authored": 8,
+ "n_origin_untracked_in_parent_git": 35,
+ "total_bytes": 2689075,
+ "files": [
+  {
+   "path": ".gitattributes",
+   "bytes": 442,
+   "sha256": "886241e263724a9edf1e4239221bd4236a90b898d55c82e1ac7be43e30fe58b7",
+   "origin": "authored"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 1010,
+   "sha256": "60936d77e73e6bb1c975c11fe5e0fd5af01e8f6738df348bedd698779b7d9c33",
+   "origin": "authored"
+  },
+  {
+   "path": "data/metadata/channel_qc.csv",
+   "bytes": 3525,
+   "sha256": "01e8c885b7ea861708626ae8873271bcca9667543a51f0faaa908b64fb8d87e8",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/metadata/dataset_summary.json",
+   "bytes": 8596,
+   "sha256": "097573cc9771bbab4c70fa303c90b0bd7bdd0e036d2117ae8efa813abbe7a117",
+   "origin": "derived",
+   "derivation": "config.paths.root was rewritten from an absolute local path to '.'; every other field is unchanged",
+   "origin_sha256": "bca0a8fc3d1eb138fc89b27cadd4510d5fe6297dbc93d69ec722f8b9fd1f2ba6",
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/metadata/epoch_index.csv",
+   "bytes": 420530,
+   "sha256": "60344449888be43fcd9247e0dcef31c5af3f1ee51c37bc572517e16d989d1332",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/metadata/epoch_qc.csv",
+   "bytes": 1990,
+   "sha256": "5b4af35f922fce6dc4760af6605713c4a426b7f0e90c749af52aba47b4784e23",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/metadata/phase4a/phase4a_summary.json",
+   "bytes": 9207,
+   "sha256": "9c2d44ccc1e6b18667a6ebf2b21b2142aea40aa4de2de5806ec96d1b5f11c096",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase4b/phase4b_subject_results.csv",
+   "bytes": 30810,
+   "sha256": "47c0b243f95283f55dd4deb68b100a14617b30d85b155d862599d3a3603912ca",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase4b/phase4b_summary.json",
+   "bytes": 13752,
+   "sha256": "6bff8873176c123ff58adda9f6d4d3f02c72bd807db885f54af1578f80bebbb6",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase5/phase5_outcome_definition.json",
+   "bytes": 372,
+   "sha256": "a606d603037c4e2c99ef6e8484825b931766412702c3468b69d83aee6377615a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase6b/phase6b_neurostates.csv",
+   "bytes": 1016675,
+   "sha256": "05e7ba20d8c48bd1304b0ae22ce75b5abed06feadc7427c5e8700303e86d8bf1",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase6b/phase6b_subjects.csv",
+   "bytes": 24479,
+   "sha256": "4ef5e3a6c797366d2b5e2639014762e4ef7fb2beb733254332419ce69385214a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/phase6b/phase6b_summary.json",
+   "bytes": 7911,
+   "sha256": "8de9258dd4f62c5cdb999737e29da56e5b9e0c16557e79955f8828404ee3a3d9",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "data/metadata/recordings.csv",
+   "bytes": 30965,
+   "sha256": "19e780dc5e0392715dfff2dc31c88625ae9c72d12adc4f0a9cbe489372143290",
+   "origin": "derived",
+   "derivation": "the 'path' column was rewritten from an absolute local path to a repository-relative one (120 rows); every other column, including every SHA-256, is unchanged",
+   "origin_sha256": "a2d2f6e430ef38d2de6d4b750060429c6e03625c91fcc34ea259d9f5a9ff0b08",
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/processed/.gitkeep",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/raw/.gitkeep",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "data/SHA256SUMS.txt",
+   "bytes": 259919,
+   "sha256": "7f5d16957d8ee7bce86cc7ccba0e5994f63f33781607eb3f838392d49311a208",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1114,
+   "sha256": "ab525ceb62b93ce23f2e8880444fe7dac975b12516ae62f3a3bdf4444a7aab5d",
+   "origin": "authored"
+  },
+  {
+   "path": "PROVENANCE.md",
+   "bytes": 10829,
+   "sha256": "22056e8fc7d8c8d7b582cc5ef5d45e1c0f3e4b5c8e7115521eb210c97dcdb4fe",
+   "origin": "authored"
+  },
+  {
+   "path": "pytest.ini",
+   "bytes": 430,
+   "sha256": "c7a0cef9cb866644192ebd5658bfd7d23884512e65ae159b821fd7982fa33c3d",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "README.md",
+   "bytes": 16118,
+   "sha256": "e304994d6d0eb437de524cdfc5c438ce796123fb3484e614e6fabef8656c8142",
+   "origin": "authored"
+  },
+  {
+   "path": "reports/figures/.gitkeep",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "requirements.txt",
+   "bytes": 1935,
+   "sha256": "a4a4743791ce56f22d855166955d61300dbcc3ccef4283811a7ca9ff14005267",
+   "origin": "authored"
+  },
+  {
+   "path": "scripts/metrics_from_deposited.py",
+   "bytes": 6860,
+   "sha256": "809098f8c232dc1eef5722767b18ad1ff5ea57e482aa8fc560da87c54d65ac62",
+   "origin": "authored"
+  },
+  {
+   "path": "scripts/reproduce_predictions.py",
+   "bytes": 12686,
+   "sha256": "25a4be1f4c177d77b2d99a08eff099ad8997052c0181cb540ca909eea251d4e2",
+   "origin": "authored"
+  },
+  {
+   "path": "src/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/_common.py",
+   "bytes": 4044,
+   "sha256": "1de91d7dd7b568d13f1a6898e9bd555afd2cdb504b9d65a4f3d9b8bcad2ae257",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/build_dataset.py",
+   "bytes": 1899,
+   "sha256": "d25b9635634c81b9551520bcd9520518b851bbd3f67e976b810ebd163a4dbc53",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/dataset_report.py",
+   "bytes": 22185,
+   "sha256": "c490c46c4185ed9c4ec992f7de90e44a68f2ae6a6367f4f8dbf593764068ddb7",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/explore.py",
+   "bytes": 3119,
+   "sha256": "6cd1857782aa4239fdf3be6658bd1e27942c4d4d9540cb5709050631967d8f27",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/fetch_dataset.py",
+   "bytes": 4811,
+   "sha256": "2e2f15e2542fd9d8052b856dc65b717ca80e3cd6b80abbdd4f9e85b6bffaeb47",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/fetch_direct.py",
+   "bytes": 6172,
+   "sha256": "4c46a9096eb483b333cb89946296f1caf58ce54302c4f0ad6ac0d4dc76296433",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/cli/make_figures.py",
+   "bytes": 1617,
+   "sha256": "51b1180bc46252a5ada3cdf3946a95b43bfbc32f80f6a821039ea7491b426442",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/phase2_baselines.py",
+   "bytes": 9291,
+   "sha256": "beec5c4de9f7f3c687db5eccb10a86f7e8d17b04c68a54cdf4781f41575181c2",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/phase3_calibration.py",
+   "bytes": 10849,
+   "sha256": "ddd21968f3d351a905a592bf65b2e8887893c895552d82dcbc32cd23b9746097",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/phase4b_final.py",
+   "bytes": 21937,
+   "sha256": "68c01a8f0b0a1d3aea04918322d9e9e242a40cd077094a0fcaa7264458e1dcc5",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/cli/phase5_audit.py",
+   "bytes": 20676,
+   "sha256": "fd800ef1241f54869db07a333dc737c91cc2f6bc8c68e3a3217b716609137284",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/cli/phase6b_encoder.py",
+   "bytes": 9818,
+   "sha256": "30fcf463848b2701c1e59fe44e672b0a7404e03c095c11fa9e35b62bd26b4a2a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/cli/qc_report.py",
+   "bytes": 17927,
+   "sha256": "ae6e6b8b70175e782b0a6218deec53da6696da15178500b27b46d2b2de43a52d",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/cli/verify_dataset.py",
+   "bytes": 5524,
+   "sha256": "987ef95a2f5a52f8e4c25d6bfc459a82df2d7a0e12ba1114ca840ff846260c43",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/config.py",
+   "bytes": 13034,
+   "sha256": "39691bf8942a6e38dd6fcb9b690578ec01a6044fbee288f204f7c66547d41760",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/download.py",
+   "bytes": 7578,
+   "sha256": "b71fea040207795a2d0910879aab8dca1abce3fd1423899cd1013fbb1255d372",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/integrity.py",
+   "bytes": 9576,
+   "sha256": "6435cbcd5095749adc97d08835149a151ac650f2bd7385eaf85f7e06235220e6",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/loader.py",
+   "bytes": 14871,
+   "sha256": "72b6d66d28a98c4a0a99dd58e41b9f0ad51afabe8c2e46578576f9651813f74b",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/physionet_spec.py",
+   "bytes": 19058,
+   "sha256": "d9b68813bc8baf7e3f2a0b037f81ffcc83df83b4709bf1eda0a022243d1d2b4a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/data/synthetic.py",
+   "bytes": 11583,
+   "sha256": "4cb0d1b8fc5c2d15c5993e5f8c316dac1cd4db8211e53c4eb726b7bc3050121c",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/encoder/__init__.py",
+   "bytes": 2600,
+   "sha256": "83526115ab559fa205c41c7188ff20e1e476759abf4da99283f326cf0a304686",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/encoder/adapter.py",
+   "bytes": 13871,
+   "sha256": "19ff18914eeb59fea3d6f60e4c34b17990553afdb345278098fca4f757338275",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/encoder/paper1.py",
+   "bytes": 14702,
+   "sha256": "cfb64bec8c9914dde444037f1de5de5a82716e8421a76e0a7d17cfb71a0bee80",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/encoder/provenance.py",
+   "bytes": 12989,
+   "sha256": "de117534f0172f2857ca94805eb6a182d74d9ac6f7f30c3f58854a8835529548",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/eval/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/eval/audit.py",
+   "bytes": 9776,
+   "sha256": "de908661a264aa97964a270537dba8e057394827696c200fd3775f185fee92b4",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/eval/baselines.py",
+   "bytes": 5366,
+   "sha256": "7faa661f2127b15c026d11900442a6be7a446ff5b45e1dd88d1dfe85f4c6d07b",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/eval/calibration.py",
+   "bytes": 20203,
+   "sha256": "475d07159177aeaa0d729cc8026b07a8ffba7aa6907e3b4a2b9d33957d49c824",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/eval/personalization.py",
+   "bytes": 14902,
+   "sha256": "bb23fd15a6b9812234302ebbb453e4fff2f4245a35008a1411a8a7f0d88f5845",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/eval/protocol.py",
+   "bytes": 16799,
+   "sha256": "1440bb3519980eb21d3fc59038ce11c40907026ccd83d712628d2cc3cceb591a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/features/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/features/bandpower.py",
+   "bytes": 6960,
+   "sha256": "09241f2dd785e851168019bd2c8bc804feefcf1b24db91a175cc136ddf847c60",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/features/diagnostics.py",
+   "bytes": 12040,
+   "sha256": "cbf7bb0880b950b08f8d78bb0b0c68c6085982ed043885d60cc9dceb32a40cad",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/features/extract.py",
+   "bytes": 13017,
+   "sha256": "20d1581a86b9fb9aaeda531f156944e54a9e76a7cffadb1eb5b80fbeecbbdbe7",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/features/run_diagnostics.py",
+   "bytes": 8470,
+   "sha256": "1dd3e0fed4d83fd8ca153be2891b5d38de57c2fc802c48bcaa8caae4f5b91e35",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/features/spatial.py",
+   "bytes": 7257,
+   "sha256": "f0b2b8f97361f029ff7718b744baa975a96f1b10cf7291ac3ffd1cb102e381a5",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/io/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/io/store.py",
+   "bytes": 13632,
+   "sha256": "a3986784f18a5689443b30f0c03e7edbe19d83f0b789955dd94ca02949c32503",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/preprocessing/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/preprocessing/epoching.py",
+   "bytes": 11742,
+   "sha256": "b5362abf955ad869b952ac20e8cd301d1e693b14a8ad983aac8a3ee9f08148b6",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/preprocessing/filters.py",
+   "bytes": 8666,
+   "sha256": "71e8350cc5883ba0409b4671faad891719420456543ed4f046a15f07c945f844",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/preprocessing/pipeline.py",
+   "bytes": 7632,
+   "sha256": "9c462679dea92b22da3036c2a5911b624ef09ca68c52a36b6ee1c531962a2f4a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/qc/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/qc/figures.py",
+   "bytes": 8813,
+   "sha256": "338e4a4b2801d3e19cd922bb9b011c06290e19ea7a10519b74a8ed83677b1b9c",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/qc/quality.py",
+   "bytes": 29258,
+   "sha256": "001398aedc86bb9e42acfc993c4c1d60c05eb56b117d568bb537cb2f0f56e193",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/twin/__init__.py",
+   "bytes": 3175,
+   "sha256": "dd951a3e929ea9c6841564b72731d0ee85d510563bc84da8eeeb45e1dd6633d1",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/history.py",
+   "bytes": 7668,
+   "sha256": "72c3ecfe47a5fb519a94f981e228cabe2b738c3d72a81883b94988e6128c5d34",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/interfaces.py",
+   "bytes": 7095,
+   "sha256": "d4059344721235e268323a7df192761ee15a9de21b7f6f8bdb0ff52224b6c409",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/latent.py",
+   "bytes": 30843,
+   "sha256": "bacb56f829d97150d56b0853334eaed5ab0b3aec3faed4e6a210346eadf7ff7d",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/normalisation.py",
+   "bytes": 6612,
+   "sha256": "22e766399b4663854d7728aec639e5dec22f3449831e36d5c77ec1b728143df6",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/observation.py",
+   "bytes": 4125,
+   "sha256": "04b7cd508e4558c99f8a2c9d8e6cb05d1bbfae63b3960858b605166b1d6bad4e",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/serialization.py",
+   "bytes": 8650,
+   "sha256": "32aa511fd5dbe165d28d0f5f41bd33db8643c577a9e1868e81f0caa3de86a341",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/states.py",
+   "bytes": 20295,
+   "sha256": "6e0bd3bdcb5e0d794382874099c72f622d448dd3d814ffaa4c55cdfec1fc80fd",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/twin.py",
+   "bytes": 10103,
+   "sha256": "6a84f92e17417a4053159677bd49e69b3f6f12fc6e071c86c8215e5178d359e4",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/uncertainty.py",
+   "bytes": 8698,
+   "sha256": "209f3e0e955522cb87f5ce1d6b72a3fe19f7feb0eb8f1988c04010b05f620501",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/twin/variability.py",
+   "bytes": 10151,
+   "sha256": "dc37de2149d9db6d196ec80924a24fefdb8c956437f3f95c83600ae8fa1faf06",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "src/viz/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "src/viz/figures.py",
+   "bytes": 20421,
+   "sha256": "cc5dba922ea1c298995ca3c18203b1ef349610e83a257e73a1944f992594db05",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/__init__.py",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/conftest.py",
+   "bytes": 2361,
+   "sha256": "297b19f350c1e5db64e045c51b19cefd23d7493d975ea2609e7bd4048e9a7bb5",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_config.py",
+   "bytes": 6212,
+   "sha256": "5ba3f0c0735521b4d3d1a3d4c14782d48b11692169e2cc8dd0f7867c839acef8",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_dataset_integrity.py",
+   "bytes": 13822,
+   "sha256": "044eae64379d475de26d05a96545c6994baf7252349f878235ea8483a58aec68",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_encoder_provenance.py",
+   "bytes": 15431,
+   "sha256": "2fc7fe8e89ccf542b26a14274e20717b091e06452698ed312d91685348568dda",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_features.py",
+   "bytes": 10550,
+   "sha256": "9e45927854661e137419c912d58ecf166cb38601c213b1f3536754c8fffc0fed",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_leakage.py",
+   "bytes": 11143,
+   "sha256": "d787aeba198b5027d5e5bbcc116bb63e5498e3ec98f0d295b892c90c66c4b259",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_loader.py",
+   "bytes": 8422,
+   "sha256": "fcfb5af8ff4fb3e7cf9d1b52598970b5f967d7c1cc3701d6d6d4933068872f2b",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_phase1_7.py",
+   "bytes": 14286,
+   "sha256": "a9f1e591268250429595ed51ffa6a9500fb618786996a8cb215dd48c11a3ed68",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_phase3_leakage.py",
+   "bytes": 16293,
+   "sha256": "bbad8439a49d6a1b26a5827ef91ae3c06f551bff7d5bfc2d69672e6fbd89f256",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_phase4b_all64_leakage.py",
+   "bytes": 10053,
+   "sha256": "3925300c9883519c1ec4a4a5b8634d5605afffdd56328fda384503ee3b9efe70",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_phase4b_leakage.py",
+   "bytes": 17569,
+   "sha256": "6c18bf6941a5803f12a44fd8affbf5ea75eb2740fc6f13101a0f12e97b79aa46",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_phase5_circularity.py",
+   "bytes": 14251,
+   "sha256": "f96d7667816631133069244f90a57adb74d4bf92bc91cb321ccc7b090460379b",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_phase5b_circularity.py",
+   "bytes": 12733,
+   "sha256": "215b132c02851f330c2493da30d46527c2b0d64dc3fdf01d4365e0180e3bc921",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_phase6b_realdata.py",
+   "bytes": 12936,
+   "sha256": "6da8540f168a11cb5dba02114fc21bcc9925bd644e88e1f11bfccf5e3a7ac4f3",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": false
+  },
+  {
+   "path": "tests/test_physionet_live.py",
+   "bytes": 12664,
+   "sha256": "eb8d8a1425ddf9a30bf34f78299d7738200a08555911af7286655a81325d84bd",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_physionet_spec.py",
+   "bytes": 9621,
+   "sha256": "9756246c0eb315e36ca67afa31bbef08c000c998b9466219c095e6c73308c420",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_preprocessing.py",
+   "bytes": 11545,
+   "sha256": "0fa4c4f97ef21dba86391e6400066ec88a4b75568d407294d67842167f9df96c",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  },
+  {
+   "path": "tests/test_qc.py",
+   "bytes": 16928,
+   "sha256": "fa3e397f4a8287838c257263ce636454e2027db7a439f8e3b2165e5c1c8b6a9a",
+   "origin": "verbatim",
+   "matches_origin": true,
+   "origin_tracked_in_git": true
+  }
+ ]
+}

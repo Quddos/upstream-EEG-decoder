@@ -1,0 +1,17 @@
+{
+  "source": "phase4b ROI-21 frozen logistic_regression LOSOCV left_vs_right",
+  "threshold": 0.5,
+  "n_below": 8,
+  "n_above": 32,
+  "below_subjects": [
+    "S003",
+    "S028",
+    "S038",
+    "S024",
+    "S021",
+    "S036",
+    "S018",
+    "S009"
+  ],
+  "note": "Fixed from the pre-existing Phase 4B result BEFORE any Phase 5 diagnostic was computed."
+}

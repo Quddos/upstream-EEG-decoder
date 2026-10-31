@@ -1,0 +1,32 @@
+# --- data -------------------------------------------------------------------------
+# The PhysioNet recordings are public but redistribution is not ours to grant, and
+# the processed arrays are rebuildable from them by `python -m src.cli.build_dataset`.
+# Metadata and the deposited out-of-fold predictions ARE tracked: they make the
+# reported metrics reproducible without the recordings.
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+data/synthetic/raw/**
+!data/synthetic/raw/.gitkeep
+data/synthetic/processed/**
+!data/synthetic/processed/.gitkeep
+
+# --- generated figures ------------------------------------------------------------
+reports/figures/**
+!reports/figures/.gitkeep
+reports/figures_synthetic/**
+
+# --- python -----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# --- editors / os -----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

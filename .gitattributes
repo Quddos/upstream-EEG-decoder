@@ -1,0 +1,12 @@
+# Every text file is stored and checked out with LF endings, on every platform.
+#
+# This is not a style preference: MANIFEST.sha256 records the SHA-256 of each
+# file as committed. If git converted line endings on checkout, every digest
+# would fail to verify on Windows and the provenance record would be useless.
+* text=auto eol=lf
+
+# Binary-ish artifacts that must never be touched.
+*.npz  binary
+*.edf  binary
+*.pdf  binary
+*.png  binary
